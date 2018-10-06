@@ -1,4 +1,4 @@
-def max_puissance_10(N):
+def max_puissance_10(N): # Fonction qui renvoie l'ordre de grandeur de N
     mp10 = 0
     p10 = 0
     while int(N/10**p10) > 0:
