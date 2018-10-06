@@ -1,9 +1,9 @@
 f = open("p022_names.txt", "r")
 noms_en_desordre = []
 for ligne in f:
-    noms_en_desordre += ligne.split(",")
+    noms_en_desordre += ligne.split(",") # Construction d'une liste contenant l'ensemble des prénoms du fichier
 
-def nombre_lettre(l):
+def nombre_lettre(l): # Fonction qui associe à la lettre l le nombre correspondant à sa place dans l'alphabet
     alphabet = ['"',"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     for j in range(len(alphabet)):
         if alphabet[j] == l:
