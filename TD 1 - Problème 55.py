@@ -1,11 +1,11 @@
-def inverse(N):
+def inverse(N): # Construit le symétrique du nombre N par rapport à son milieu
     Nlist = list(str(N))
     N2 = 0
     for k in range(len(Nlist)):
         N2 += int(Nlist[k])*10**k
     return N2
 
-def Lychrel(nombre1):
+def Lychrel(nombre1): # Indique si nombre1 est un nombre de Lychrel
     nombre2 = inverse(nombre1)
     somme1 = nombre1 + nombre2
     somme2 = inverse(somme1)
